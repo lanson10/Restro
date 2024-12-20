@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DineHub login</title>
+    <link rel="shortcut icon" href="../Assets/images/DineHubLogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="preloader"><img src="../Assets/Spinning line.gif" alt="Spinning line"></div>
+        <div id="loader">
+            <div>
+                <h3>Wait while working !!</h3>
+                <video autoplay muted loop>
+                    <source src="../Assets/loading.mp4" type="video/mp4">
+                </video>
+                <p>creating your workspace</p>
+                <img src="../Assets/images/loading.gif" alt="">
+            </div>
+        </div>
+        <div id="errMsg"></div>
+        <div class="form">
+            <form action="#">
+                <h1>Welcome Back !</h1>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" autocomplete="off" placeholder="Password">
+                    <img src="../Assets/images/eye-solid.svg" alt="eye image">
+                </div>
+                <a id="forgotPasswordLink" href="../forgotPassword/">Forgot Password?</a>
+                <button id="signupBtn">sign In</button>
+                <span>Or</span>
+                <div class="OauthBox">
+                    <button id="googleSigninBtn"><img src="../Assets/images/googleBtnImg.svg" alt="google logo">Sign in with Google</button>
+                    <button id="appleSigninBtn"><img src="../Assets/images/appleBtnImg.svg" alt="apple logo">Sign in with Apple</button>
+                </div>
+                <span id="signinLink">Don't have an account? <a href="../signup">Sign Up</a></span>
+            </form>
+        </div>
+        <div class="image"></div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

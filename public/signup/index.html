@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/images/DineHubLogo.jpg" type="image/x-icon">
+    <title>DineHub signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="preloader"><img src="../Assets/Spinning line.gif" alt=""></div>
+        <div id="errMsg"></div>
+        <div class="form">
+            <form>
+                <h1>Get Started Now</h1>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" autocomplete="off" placeholder="Enter your name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" autocomplete="off" placeholder="Enter your email">
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" autocomplete="off" placeholder="Password">
+                    <img src="../Assets/images/eye-solid.svg" alt="eye image">
+                </div>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox" id="checkboxText" required>I agree to <a href="#">terms and policy</a></label>
+                <input type="submit" id="signupBtn" value="signup">
+                <span>Or</span>
+                <div class="OauthBox">
+                    <button id="googleSigninBtn"><img src="../Assets/images/googleBtnImg.svg" alt="google logo">Sign in with Google</button>
+                    <button id="appleSigninBtn"><img src="../Assets/images/appleBtnImg.svg" alt="apple logo">Sign in with Apple</button>
+                </div>
+                <span id="signinLink">Have an account? <a href="../login">Sign In</a></span>
+            </form>
+        </div>
+        <div class="image"></div>
+    </div>
+    <script type="module" src="../config.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
